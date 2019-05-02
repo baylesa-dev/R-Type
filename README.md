@@ -14,13 +14,17 @@ R-TYPE
 
 ## Introduction
 
-For this project of the Advanced C++ knowledge unit, R-Type will introduce us to networked video game development.
+For this project of the Advanced C++ knowledge unit, R-Type introduce networked video game development.
 
 We had to implement a multi-threaded server and a graphical client, using a re-usable game engine of our own design. Our game had also to be fun to play!
 
 For the sad ignorants among you who may not know this best-selling video game, which accounts for countless lost hours of our childhood, here is a little introduction.
 
 The purpose of this project was to create a one-to-four player game, using a client/server architecture.
+
+## Getting Started
+
+Checkout the [Build and Launch]() documentation to get started.
 
 ## Build and Launch
 
