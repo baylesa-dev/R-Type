@@ -24,7 +24,7 @@ The purpose of this project was to create a one-to-four player game, using a cli
 
 ## Getting Started
 
-Checkout the [Build and Launch]() documentation to get started.
+Checkout the [Build and Launch](https://github.com/baylesa-dev/R-Type/blob/master/docs/build-start.md) documentation to get started.
 
 ## Build and Launch
 
