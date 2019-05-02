@@ -112,6 +112,7 @@ flycheck_*.el
 
 
 ### VisualStudioCode ###
+.vscode
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
