@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${PWD}/build/CRinge/CRinge/lib/
+export DYLD_LIBRARY_PATH=$LD_LIBRARY_PATH:${PWD}/build/CRinge/CRinge/lib/
+
+# DEBUG
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${PWD}/build/CRinge/CRingeNetwork/lib/
+export DYLD_LIBRARY_PATH=$LD_LIBRARY_PATH:${PWD}/build/CRinge/CRingeNetwork/lib/
+
+case "$1" in
+    "server")
+        ./build/bin/r-type_server
+        ;;
+    "client")
+        ./build/bin/r-type_client
+        ;;
+    "compile")
+        (rm -rf build && mkdir build && cd build && conan install .. && cmake .. -G "Unix Makefiles" && cmake --build .)
+        ;;
+    *)
+        (>&2 echo "Missing arguments (server|client)")
+        exit 1
+esac
